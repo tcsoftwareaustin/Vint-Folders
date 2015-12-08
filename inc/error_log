@@ -1,0 +1,20 @@
+[27-Feb-2014 20:17:53 UTC] PHP Warning:  Division by zero in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 214
+[27-Feb-2014 20:18:15 UTC] PHP Warning:  Division by zero in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 214
+[27-Feb-2014 20:23:11 UTC] PHP Warning:  Division by zero in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 218
+[27-Feb-2014 20:24:23 UTC] PHP Warning:  Division by zero in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 218
+[27-Feb-2014 20:24:38 UTC] PHP Warning:  Division by zero in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 218
+[20-Mar-2014 02:33:08 UTC] PHP Fatal error:  Call to a member function rowCount() on a non-object in /home/mihamil86/public_html/subdomains/wine/inc/loadWine.php on line 23
+[30-Jun-2014 10:38:58 America/Chicago] PHP Notice:  Undefined variable: curWine in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 242
+[30-Jun-2014 10:38:58 America/Chicago] PHP Fatal error:  Call to a member function getDetailInventory() on a non-object in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 242
+[30-Jun-2014 10:52:19 America/Chicago] PHP Notice:  Undefined variable: args in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 242
+[30-Jun-2014 11:04:53 America/Chicago] PHP Notice:  Undefined variable: args in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 369
+[30-Jun-2014 11:04:53 America/Chicago] PHP Notice:  Undefined variable: args in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 370
+[30-Jun-2014 11:06:09 America/Chicago] PHP Notice:  Undefined variable: args in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 369
+[30-Jun-2014 11:06:09 America/Chicago] PHP Notice:  Undefined variable: args in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 370
+[30-Jun-2014 16:10:52 UTC] PHP Parse error:  syntax error, unexpected '.', expecting variable (T_VARIABLE) or '$' in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 232
+[30-Jun-2014 16:11:09 UTC] PHP Parse error:  syntax error, unexpected '.', expecting variable (T_VARIABLE) or '$' in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 232
+[30-Jun-2014 16:11:12 UTC] PHP Parse error:  syntax error, unexpected '.', expecting variable (T_VARIABLE) or '$' in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 232
+[30-Jun-2014 16:11:40 UTC] PHP Parse error:  syntax error, unexpected '.', expecting variable (T_VARIABLE) or '$' in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 232
+[30-Jun-2014 16:11:42 UTC] PHP Parse error:  syntax error, unexpected '.', expecting variable (T_VARIABLE) or '$' in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 232
+[30-Jun-2014 16:11:50 UTC] PHP Parse error:  syntax error, unexpected '.', expecting variable (T_VARIABLE) or '$' in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 232
+[30-Jun-2014 16:12:02 UTC] PHP Parse error:  syntax error, unexpected end of file, expecting variable (T_VARIABLE) or '$' in /home/mihamil86/public_html/subdomains/wine/inc/service.wine.php on line 279

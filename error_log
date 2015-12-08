@@ -1,0 +1,31 @@
+[26-Feb-2014 17:23:39 UTC] PHP Warning:  session_start(): Cannot send session cookie - headers already sent by (output started at /home/mihamil86/public_html/subdomains/wine/index.php:2) in /home/mihamil86/public_html/subdomains/wine/inc/init.php on line 4
+[26-Feb-2014 17:23:39 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mihamil86/public_html/subdomains/wine/index.php:2) in /home/mihamil86/public_html/subdomains/wine/inc/init.php on line 4
+[26-Feb-2014 17:28:27 UTC] PHP Notice:  Undefined variable: dbh in /home/mihamil86/public_html/subdomains/wine/index.php on line 3
+[26-Feb-2014 17:28:27 UTC] PHP Fatal error:  Call to a member function query() on a non-object in /home/mihamil86/public_html/subdomains/wine/index.php on line 3
+[26-Feb-2014 17:33:00 UTC] PHP Parse error:  syntax error, unexpected '';' (T_CONSTANT_ENCAPSED_STRING) in /home/mihamil86/public_html/subdomains/wine/inc/config.php on line 8
+[26-Feb-2014 17:33:19 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/mihamil86/public_html/subdomains/wine/index.php on line 45
+[26-Feb-2014 17:33:28 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/mihamil86/public_html/subdomains/wine/index.php on line 45
+[26-Feb-2014 17:35:16 UTC] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/mihamil86/public_html/subdomains/wine/index.php on line 45
+[26-Feb-2014 17:35:43 UTC] PHP Catchable fatal error:  Object of class PDO could not be converted to string in /home/mihamil86/public_html/subdomains/wine/index.php on line 3
+[26-Feb-2014 17:37:32 UTC] PHP Warning:  session_start(): Cannot send session cache limiter - headers already sent (output started at /home/mihamil86/public_html/subdomains/wine/addwine.php:2) in /home/mihamil86/public_html/subdomains/wine/inc/init.php on line 4
+[30-Jun-2014 12:31:46 America/Chicago] PHP Notice:  Undefined variable: dbh in /home/mihamil86/public_html/subdomains/wine/index.php on line 3
+[30-Jun-2014 12:31:46 America/Chicago] PHP Fatal error:  Call to a member function query() on a non-object in /home/mihamil86/public_html/subdomains/wine/index.php on line 3
+[30-Jun-2014 17:35:18 UTC] PHP Notice:  Undefined index: dbUser in /home/mihamil86/public_html/subdomains/wine/install.php on line 27
+[30-Jun-2014 17:35:18 UTC] PHP Notice:  Undefined index: dbPassword in /home/mihamil86/public_html/subdomains/wine/install.php on line 27
+[30-Jun-2014 17:36:01 UTC] PHP Notice:  Undefined index: dbUser in /home/mihamil86/public_html/subdomains/wine/install.php on line 27
+[30-Jun-2014 17:36:01 UTC] PHP Notice:  Undefined index: dbPassword in /home/mihamil86/public_html/subdomains/wine/install.php on line 27
+[30-Jun-2014 17:36:16 UTC] PHP Notice:  Undefined index: dbUser in /home/mihamil86/public_html/subdomains/wine/install.php on line 27
+[30-Jun-2014 17:36:16 UTC] PHP Notice:  Undefined index: dbPassword in /home/mihamil86/public_html/subdomains/wine/install.php on line 27
+[30-Jun-2014 17:36:21 UTC] PHP Notice:  Undefined index: dbUser in /home/mihamil86/public_html/subdomains/wine/install.php on line 27
+[30-Jun-2014 17:36:21 UTC] PHP Notice:  Undefined index: dbPassword in /home/mihamil86/public_html/subdomains/wine/install.php on line 27
+[30-Jun-2014 17:38:59 UTC] PHP Notice:  Undefined index: server in /home/mihamil86/public_html/subdomains/wine/install.php on line 27
+[30-Jun-2014 17:38:59 UTC] PHP Notice:  Undefined index: database in /home/mihamil86/public_html/subdomains/wine/install.php on line 27
+[30-Jun-2014 17:38:59 UTC] PHP Notice:  Undefined index: user in /home/mihamil86/public_html/subdomains/wine/install.php on line 27
+[30-Jun-2014 17:38:59 UTC] PHP Notice:  Undefined index: password in /home/mihamil86/public_html/subdomains/wine/install.php on line 27
+[30-Jun-2014 12:39:53 America/Chicago] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/mihamil86/public_html/subdomains/wine/index.php on line 45
+[30-Jun-2014 12:41:10 America/Chicago] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/mihamil86/public_html/subdomains/wine/index.php on line 45
+[30-Jun-2014 12:42:53 America/Chicago] PHP Fatal error:  Call to a member function fetch() on a non-object in /home/mihamil86/public_html/subdomains/wine/index.php on line 46
+[30-Jun-2014 12:43:44 America/Chicago] PHP Notice:  Undefined variable: dbh in /home/mihamil86/public_html/subdomains/wine/index.php on line 3
+[30-Jun-2014 12:43:44 America/Chicago] PHP Fatal error:  Call to a member function query() on a non-object in /home/mihamil86/public_html/subdomains/wine/index.php on line 3
+[30-Jun-2014 12:45:26 America/Chicago] PHP Notice:  Undefined index: locname in /home/mihamil86/public_html/subdomains/wine/index.php on line 47
+[30-Jun-2014 12:45:26 America/Chicago] PHP Notice:  Undefined index: locname in /home/mihamil86/public_html/subdomains/wine/index.php on line 47

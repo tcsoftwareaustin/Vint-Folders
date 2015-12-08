@@ -1,0 +1,133 @@
+-- MySQL dump 10.13  Distrib 5.5.35, for Linux (x86_64)
+--
+-- Host: localhost    Database: wine_cellar
+-- ------------------------------------------------------
+-- Server version	5.5.35-cll-lve
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
+/*!40101 SET @OLD_COLLATION_CONNECTION=@@COLLATION_CONNECTION */;
+/*!40101 SET NAMES utf8 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_UNIQUE_CHECKS=@@UNIQUE_CHECKS, UNIQUE_CHECKS=0 */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+--
+-- Table structure for table `inventory`
+--
+
+DROP TABLE IF EXISTS `inventory`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `inventory` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `wine_id` mediumint(9) NOT NULL,
+  `datetime` timestamp NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `quantity` int(11) NOT NULL,
+  `cost` decimal(10,2) DEFAULT NULL,
+  `sell_price` decimal(10,2) DEFAULT NULL,
+  `location` int(11) NOT NULL,
+  `notes` tinyblob,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=5102 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `inventory`
+--
+
+LOCK TABLES `inventory` WRITE;
+/*!40000 ALTER TABLE `inventory` DISABLE KEYS */;
+INSERT INTO `inventory` VALUES (5068,4821,'2014-02-27 20:11:09',20,20.00,NULL,1,'Initial Inventory'),(5069,4822,'2014-02-27 20:20:28',1,10.00,NULL,1,'Initial Inventory'),(5070,4821,'2014-02-27 20:36:48',1,20.00,NULL,1,'Quick Remove'),(5071,4823,'2014-03-04 21:13:18',15,10.00,NULL,1,'Initial Inventory'),(5072,4824,'2014-03-04 21:14:05',65,10.00,NULL,1,'Initial Inventory'),(5073,4825,'2014-03-04 21:14:33',15,50.00,NULL,1,'Initial Inventory'),(5074,4823,'2014-03-04 21:15:08',25,8.00,NULL,1,''),(5075,4823,'2014-03-04 21:15:16',13,10.00,NULL,1,''),(5076,4823,'2014-03-04 21:15:37',65,10.00,NULL,1,''),(5077,4823,'2014-03-04 21:15:45',-1,NULL,25.00,1,'Quick Remove'),(5078,4823,'2014-03-04 21:15:49',1,0.00,NULL,1,'Quick Remove'),(5079,4823,'2014-03-04 21:15:56',-1,NULL,25.00,1,'Quick Remove'),(5080,4826,'2014-03-20 02:11:40',1,10.00,NULL,1,'Initial Inventory'),(5081,4827,'2014-03-20 02:12:38',1,10.00,NULL,1,'Initial Inventory'),(5082,4828,'2014-03-20 02:13:04',1,15.00,NULL,1,'Initial Inventory'),(5083,4829,'2014-03-20 02:13:31',1,50.00,NULL,1,'Initial Inventory'),(5084,4829,'2014-03-20 16:43:28',-1,NULL,0.00,1,'Quick Remove'),(5085,4828,'2014-03-20 16:43:36',-1,NULL,30.00,1,'Quick Remove'),(5086,4827,'2014-03-20 16:44:24',-1,NULL,0.00,1,'Quick Remove'),(5087,4827,'2014-06-24 14:24:55',1,10.00,NULL,2,''),(5088,4827,'2014-06-24 17:24:41',1,10.00,NULL,1,'Initial Inventory'),(5089,4827,'2014-06-24 17:25:48',1,10.00,NULL,2,'Initial Inventory'),(5090,4827,'2014-06-24 17:25:55',1,10.00,NULL,2,'Initial Inventory'),(5091,4827,'2014-06-24 17:26:08',-2,NULL,20.00,2,''),(5092,4830,'2014-06-24 17:28:11',10,100.00,NULL,1,'Initial Inventory'),(5093,4831,'2014-06-24 17:29:00',1,100.00,NULL,1,'Initial Inventory'),(5094,4832,'2014-06-24 17:30:14',15,100.00,NULL,2,'Initial Inventory'),(5095,4832,'2014-06-24 17:30:44',-15,NULL,150.00,2,''),(5096,4832,'2014-06-25 16:32:56',100,100.00,NULL,1,'Initial Inventory'),(5097,4832,'2014-06-25 16:35:31',-1,NULL,0.00,1,'Inventory Transfer To 2 :::: '),(5098,4832,'2014-06-25 16:35:31',1,0.00,NULL,2,'Inventory Transfer From 1 :::: '),(5099,4832,'2014-06-25 16:36:26',-20,NULL,0.00,1,'Inventory Transfer To 2 :::: '),(5100,4832,'2014-06-25 16:36:26',20,0.00,NULL,2,'Inventory Transfer From 1 :::: '),(5101,4821,'2014-06-30 15:47:02',20,20.00,NULL,1,'Initial Inventory');
+/*!40000 ALTER TABLE `inventory` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `locations`
+--
+
+DROP TABLE IF EXISTS `locations`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `locations` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `locname` varchar(50) NOT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `locations`
+--
+
+LOCK TABLES `locations` WRITE;
+/*!40000 ALTER TABLE `locations` DISABLE KEYS */;
+INSERT INTO `locations` VALUES (1,'Cellar'),(2,'Bar 1'),(3,'Bar 2');
+/*!40000 ALTER TABLE `locations` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `wine`
+--
+
+DROP TABLE IF EXISTS `wine`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `wine` (
+  `id` mediumint(9) NOT NULL AUTO_INCREMENT,
+  `upc` varchar(20) DEFAULT NULL,
+  `type` varchar(50) NOT NULL,
+  `name` varchar(255) NOT NULL,
+  `vintage` varchar(4) NOT NULL,
+  `cost` decimal(10,2) DEFAULT NULL,
+  `sell_price` decimal(10,2) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM AUTO_INCREMENT=4833 DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `wine`
+--
+
+LOCK TABLES `wine` WRITE;
+/*!40000 ALTER TABLE `wine` DISABLE KEYS */;
+INSERT INTO `wine` VALUES (4823,'41594876585951','Chardonnay','Kendel Jackson','1900',10.00,25.00),(4819,'1234567','Chardonnay','fasdfasdfadfaf','1900',10.00,20.00),(4820,'8585','Chardonnay','6562','1900',10.00,20.00),(4821,'65412315','Chardonnay','2222222','1900',20.00,50.00),(4822,'23423423423','Chardonnay','sfadafsdafd','1900',10.00,20.00),(4824,'64896958516','Pinot Noir','Hopper Pinot','2013',10.00,15.00),(4825,'64896465135949','Chardonnay','Kendel Jackson Special Edition','1961',50.00,80.00),(4826,'987987987987','Chardonnay','kjhkjhkh','1900',10.00,20.00),(4827,'67564554','Chardonnay','kjhlkjnblkjblkj','1900',10.00,20.00),(4828,'098098070687','Chardonnay','nl','1900',15.00,30.00),(4829,'9879869686576','Chardonnay','jlklknli','1900',50.00,100.00),(4830,'1234567894','Chardonnay','Wine1-94','1900',100.00,150.00),(4831,'1561891916','Chardonnay','Wine2','1900',100.00,150.00),(4832,'16519841651','Chardonnay','Wine 2','1900',100.00,150.00);
+/*!40000 ALTER TABLE `wine` ENABLE KEYS */;
+UNLOCK TABLES;
+
+--
+-- Table structure for table `wine_types`
+--
+
+DROP TABLE IF EXISTS `wine_types`;
+/*!40101 SET @saved_cs_client     = @@character_set_client */;
+/*!40101 SET character_set_client = utf8 */;
+CREATE TABLE `wine_types` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `name` varchar(50) DEFAULT NULL,
+  PRIMARY KEY (`id`)
+) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+/*!40101 SET character_set_client = @saved_cs_client */;
+
+--
+-- Dumping data for table `wine_types`
+--
+
+LOCK TABLES `wine_types` WRITE;
+/*!40000 ALTER TABLE `wine_types` DISABLE KEYS */;
+/*!40000 ALTER TABLE `wine_types` ENABLE KEYS */;
+UNLOCK TABLES;
+/*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
+
+/*!40101 SET SQL_MODE=@OLD_SQL_MODE */;
+/*!40014 SET FOREIGN_KEY_CHECKS=@OLD_FOREIGN_KEY_CHECKS */;
+/*!40014 SET UNIQUE_CHECKS=@OLD_UNIQUE_CHECKS */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+/*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
+
+-- Dump completed on 2014-06-30  9:48:59
